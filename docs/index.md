@@ -20,7 +20,7 @@ Para desarrollar el proyecto, este constará de los siguientes servicios para al
 - Servidor `HTTP` ==> `Nginx`
 - Creación de una `API REST` pública
 
-![Diagrama](https://github.com/RamonGago/Cloud-Computing_Project/blob/master/docs/images/Flask%2BMongo%2BNginx%2BJinja2.png)
+![alt text](images/Flask+Mongo+Nginx+Jinja2.png "Diagrama")
 
 ## Arquitectura
 
