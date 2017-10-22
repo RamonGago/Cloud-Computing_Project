@@ -13,13 +13,14 @@ La solución que se propone es el desarrollo de una aplicación que permita mant
 
 Para desarrollar el proyecto, este constará de los siguientes servicios para almacenar e intercambiar los documentos de los usuarios:
 
-- Almacenamiento en una base de datos `NOSQL` ==> MongoDB
-- Lenguaje de programación ==> Python
-- Utilización de un microframework para Python ==> Flask 
-- Motor de plantillas ==> Jinja2
-- Servidor `HTTP` ==> Nginx
+- Almacenamiento en una base de datos `NOSQL` ==> `MongoDB`
+- Lenguaje de programación ==> `Python`
+- Utilización de un microframework para Python ==> `Flask` 
+- Motor de plantillas ==> `Jinja2`
+- Servidor `HTTP` ==> `Nginx`
 - Creación de una `API REST` pública
 
+![Diagrama](https://github.com/RamonGago/Cloud-Computing_Project/blob/master/docs/images/Flask%2BMongo%2BNginx%2BJinja2.png)
 
 ## Arquitectura
 
@@ -28,6 +29,14 @@ Para desarrollar el proyecto, este constará de los siguientes servicios para al
 - La programación de la aplicación se realizará a través de los servicios detallados en el apartado anterior.
 
 - Se desplegará en la nube a través de los servicios proporcionados por [Azure](https://azure.microsoft.com/es-es/).
+
+
+## Planificación
+
+* Hito 2 => Provisionamiento de máquinas virtuales.
+* Hito 3 => Orquestación de máquinas virtuales.
+* Hito 4 => Uso de contenedores.
+* Hito 5 => Combinación de infraestructuras virtuales para desplegar una aplicación completa.
 
 
 ## Licencia
