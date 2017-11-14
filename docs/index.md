@@ -30,10 +30,20 @@ Para desarrollar el proyecto, este constará de los siguientes servicios para al
 
 - Se desplegará en la nube a través de los servicios proporcionados por [Azure](https://azure.microsoft.com/es-es/).
 
+## Aprovisionamiento
+
+* Python 3.6
+* Pip
+* MongoDB
+* Nginx
+* Librerías python instaladas:
+  * PyMongo
+  * Flask
+  * Flask-restful
+  * Flask-jsonpify
 
 ## Planificación
 
-* Hito 2 => Provisionamiento de máquinas virtuales.
 * Hito 3 => Orquestación de máquinas virtuales.
 * Hito 4 => Uso de contenedores.
 * Hito 5 => Combinación de infraestructuras virtuales para desplegar una aplicación completa.

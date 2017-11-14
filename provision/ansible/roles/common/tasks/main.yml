@@ -1,0 +1,45 @@
+---
+- name: Install Python3
+  apt:
+    name: python3.6
+    state: present
+    force: yes
+    update_cache: yes
+
+- name: Install Python Pip
+  apt:
+    name: python-pip
+    state: present
+    force: yes
+    update_cache: yes
+
+- name: Install MongoDB
+  apt:
+    name: mongodb
+    state: present
+    force: yes
+    update_cache: yes
+
+- name: Install Nginx
+  apt:
+    name: nginx
+    state: present
+    force: yes
+    update_cache: yes
+
+- name: Install Pymongo
+  pip:
+    name: pymongo
+
+- name: Install Flask
+  pip:
+    name: flask
+    
+- name: Install Flask Restful
+  pip:
+    name: flask-restful
+    
+- name: Install Flask Jsonpify
+  pip:
+    name: flask-jsonpify
+    
