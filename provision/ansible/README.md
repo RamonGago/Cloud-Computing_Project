@@ -73,4 +73,4 @@ Y por último se ejecuta:
 ansible-playbook /etc/ansible/provision.yml
 ```
 
-![alt text](provision/ansible/images/provisioning.png "Provisioning")
+![alt text](/provision/ansible/images/provisioning.png "Provisioning")
