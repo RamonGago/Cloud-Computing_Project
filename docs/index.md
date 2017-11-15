@@ -32,7 +32,6 @@ Para desarrollar el proyecto, este constará de los siguientes servicios para al
 
 ## Aprovisionamiento
 
-* Python 3.6
 * Pip
 * MongoDB
 * Nginx
