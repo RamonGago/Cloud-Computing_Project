@@ -1,6 +1,6 @@
 # Hito 2 - Create provisioning
 
-### Tras la creación de una máquina virtual [Ubuntu Server 16.04.3 LTS](https://www.ubuntu.com/download/server)desplegada en [Azure](https://azure.microsoft.com/es-es/), se propone el aprovisionamiento de la misma con [Ansible](https://www.ansible.com/) 
+### Tras la creación de una máquina virtual [Ubuntu Server 16.04.3 LTS](https://www.ubuntu.com/download/server) desplegada en [Azure](https://azure.microsoft.com/es-es/), se propone el aprovisionamiento de la misma con [Ansible](https://www.ansible.com/) 
 
 Para instalar **Ansible** en la máquina, se debe instalar en primer lugar **Python**:
 ```
@@ -16,8 +16,8 @@ sudo apt-get install ansible
 ```
 El siguiente paso será añadir la máquina virtual al archivo **/etc/ansible/hosts**:
 ```
-[webservers]
-13.81.113.59
+[virtualubuntu]
+52.142.207.82
 ```
 Para realizar el playbook del aprovisionamiento se han programado las tareas que se realizarán en el mismo:
 ```
@@ -62,7 +62,7 @@ Para realizar el playbook del aprovisionamiento se han programado las tareas que
 A continuación se crea el playbook para el aprovisionamiento con las tareas dentro del directorio **ccmmon**:
 ```
 ---
-- hosts: webserver
+- hosts: virtualubuntu
   user: rgcarrera
   sudo: yes
   roles:
@@ -72,3 +72,5 @@ Y por último se ejecuta:
 ```
 ansible-playbook /etc/ansible/provision.yml
 ```
+
+![alt text](provision/ansible/images/provisioning.png "Provisioning")

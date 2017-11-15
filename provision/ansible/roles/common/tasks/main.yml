@@ -1,18 +1,4 @@
 ---
-- name: Install Python3
-  apt:
-    name: python3.6
-    state: present
-    force: yes
-    update_cache: yes
-
-- name: Install Python Pip
-  apt:
-    name: python-pip
-    state: present
-    force: yes
-    update_cache: yes
-
 - name: Install MongoDB
   apt:
     name: mongodb

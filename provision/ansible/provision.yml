@@ -1,5 +1,5 @@
 ---
-- hosts: webserver
+- hosts: virtualubuntu
   user: rgago
   sudo: yes
   roles:
