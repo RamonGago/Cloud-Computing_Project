@@ -1,11 +1,11 @@
 # Hito 2 - Create provisioning
 
-### Tras la creación de una máquina virtual [Ubuntu Server 16.04.3 LTS](https://www.ubuntu.com/download/server) desplegada en [Azure](https://azure.microsoft.com/es-es/), se propone el aprovisionamiento de la misma con [Ansible](https://www.ansible.com/) 
+### Tras la creación de una máquina virtual [Ubuntu Server 16.04.3 LTS](https://www.ubuntu.com/download/server) desplegada en [Azure](https://azure.microsoft.com/es-es/), se propone el provisionamiento de la misma con [Ansible](https://www.ansible.com/) 
 
 Para instalar **Ansible** en la máquina, se debe instalar en primer lugar **Python**:
 ```
 sudo apt-get install python
-``` 
+```
 Y una vez realizado ya se podrá instalar **Ansible**:
 ```
 sudo apt-get update
@@ -19,7 +19,7 @@ El siguiente paso será añadir la máquina virtual al archivo **/etc/ansible/ho
 [virtualubuntu]
 52.142.207.82
 ```
-Para realizar el playbook del aprovisionamiento se han programado las tareas que se realizarán en el mismo:
+Para realizar el playbook del provisionamiento se han programado las tareas que se realizarán en el mismo:
 ```
 ---
 - name: Install Python Pip
@@ -50,16 +50,16 @@ Para realizar el playbook del aprovisionamiento se han programado las tareas que
 - name: Install Flask
   pip:
     name: flask
-    
+
 - name: Install Flask Restful
   pip:
     name: flask-restful
-    
+
 - name: Install Flask Jsonpify
   pip:
     name: flask-jsonpify
 ```
-A continuación se crea el playbook para el aprovisionamiento con las tareas dentro del directorio **ccmmon**:
+A continuación se crea el playbook para el provisionamiento con las tareas dentro del directorio **ccmmon**:
 ```
 ---
 - hosts: virtualubuntu

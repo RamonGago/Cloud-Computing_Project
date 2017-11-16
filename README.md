@@ -17,12 +17,12 @@ La solución que se propone es el desarrollo de una aplicación que permita mant
 
 Para desarrollar el proyecto, este constará de los siguientes servicios para almacenar e intercambiar los documentos de los usuarios:
 
-> Almacenamiento en una base de datos `NOSQL` ==> `MongoDB`
-> Lenguaje de programación ==> `Python`
-> Utilización de un microframework para Python ==> `Flask`
-> Motor de plantillas ==> `Jinja2`
-> Servidor `HTTP` ==> `Nginx`
-> Creación de una `API REST` pública
+> * Almacenamiento en una base de datos `NOSQL` ==> `MongoDB`
+> * Lenguaje de programación ==> `Python`
+> * Utilización de un microframework para Python ==> `Flask`
+> * Motor de plantillas ==> `Jinja2`
+> * Servidor `HTTP` ==> `Nginx`
+> * Creación de una `API REST` pública
 
 ![alt text](images/Flask+Mongo+Nginx+Jinja2.png "Diagrama")
 
@@ -38,16 +38,16 @@ Se ha decidido llevar a cabo el provisionamiento a través de Ansible, un motor 
 
 En el siguiente enlace se puede acceder a las instrucciones de instalación del mismo:
 
-* [Provisionamiento con Ansible](provision/ansible/)
+* [Provisionamiento con Ansible](provision/ansible/README.md)
 
 ## Planificación
 
-> :white_check_mark: Hito 0 => Creación de repositorio en Github y manejo de las herramientas a utilizar.
-> :white_check_mark: Hito 1 => Estructuración y descripción del proyecto a llevar a cabo.
-> :white_check_mark: Hito 2 => Provisionamiento de máquinas virtuales.
-> Hito 3 => Automatización de la creación máquinas virtuales.
-> Hito 4 => Uso de contenedores.
-> Hito 5 => Combinación de infraestructuras virtuales para desplegar una aplicación completa.
+> * :white_check_mark: Hito 0 => Creación de repositorio en Github y manejo de las herramientas a utilizar.
+> * :white_check_mark: Hito 1 => Estructuración y descripción del proyecto a llevar a cabo.
+> * :white_check_mark: Hito 2 => Provisionamiento de máquinas virtuales.
+> * Hito 3 => Automatización de la creación máquinas virtuales.
+> * Hito 4 => Uso de contenedores.
+> * Hito 5 => Combinación de infraestructuras virtuales para desplegar una aplicación completa.
 
 
 ## Licencia
