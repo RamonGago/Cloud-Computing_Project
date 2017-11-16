@@ -2,7 +2,7 @@
 
 Repositorio para el desarrollo del proyecto de Cloud Computing, asignatura del Máster Profesional Ingeniería Informática en la [UGR](https://www.ugr.es/).
 
-## [Web del proyecto](https://ramongago.github.io/Cloud-Computing_Project/)
+## [Documentación](https://ramongago.github.io/Cloud-Computing_Project/)
 
 ## Descripción del proyecto
 
@@ -22,6 +22,7 @@ Para desarrollar el proyecto, este constará de los siguientes servicios para al
 - Motor de plantillas ==> `Jinja2`
 - Servidor `HTTP` ==> `Nginx`
 - Creación de una `API REST` pública
+
 
 ![alt text](docs/images/Flask+Mongo+Nginx+Jinja2.png "Diagrama")
 

@@ -39,9 +39,9 @@ En el siguiente enlace se puede acceder a las instrucciones de instalación del 
 
 ## Planificación
 
-- :white_check_mark: Hito 0 => Creación de repositorio en Github y manejo de las herramientas a utilizar.
-- :white_check_mark: Hito 1 => Estructuración y descripción del proyecto a llevar a cabo.
-- :white_check_mark: Hito 2 => Provisionamiento de máquinas virtuales.
+- Hito 0 => Creación de repositorio en Github y manejo de las herramientas a utilizar.
+- Hito 1 => Estructuración y descripción del proyecto a llevar a cabo.
+- Hito 2 => Provisionamiento de máquinas virtuales.
 - Hito 3 => Automatización de la creación máquinas virtuales.
 - Hito 4 => Uso de contenedores.
 - Hito 5 => Combinación de infraestructuras virtuales para desplegar una aplicación completa.
