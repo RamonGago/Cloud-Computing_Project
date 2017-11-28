@@ -37,12 +37,24 @@ En el siguiente enlace se puede acceder a las instrucciones de instalación del 
 
 - [Provisionamiento con Ansible](provision/ansible)
 
+## Automatización de creación de maquinas virtuales
+
+La automatización de la creación de máquinas virtuales se ha realizado a través del cliente de [Azure](https://azure.microsoft.com/es-es/), que ha sido el elegido desde un primer momento para el despliegue de máquinas virtuales en la nube, gracias a su sencillo manejo.
+
+En las máquinas virtuales desplegadas, tanto para realizar las pruebas como para ejecutar el script de automatización, se ha utilizado el SO [Ubuntu Server 16.04.3 LTS](https://wiki.ubuntu.com/XenialXerus/ReleaseNotes?_ga=2.130289736.659109912.1510849497-1227624830.1510666285). Esta decisión viene dada por la familiaridad con este SO  y su amplia comunidad de soporte. Además el hecho de que sea una versión [LTS](https://wiki.ubuntu.com/LTS) (Long Term Support) proporciona un valor añadido a la hora de su elección.
+
+En el siguiente enlace se puede acceder a las instrucciones de la automatización de creación de máquinas virtuales:
+
+- [Automatización](automation/)
+
+**IP de despliegue**: 52.178.73.193
+
 ## Planificación
 
-- Hito 0 => Creación de repositorio en Github y manejo de las herramientas a utilizar.
-- Hito 1 => Estructuración y descripción del proyecto a llevar a cabo.
-- Hito 2 => Provisionamiento de máquinas virtuales.
-- Hito 3 => Automatización de la creación máquinas virtuales.
+- :white_check_mark: Hito 0 => Creación de repositorio en Github y manejo de las herramientas a utilizar.
+- :white_check_mark: Hito 1 => Estructuración y descripción del proyecto a llevar a cabo.
+- :white_check_mark: Hito 2 => Provisionamiento de máquinas virtuales.
+- :white_check_mark: Hito 3 => Automatización de la creación máquinas virtuales.
 - Hito 4 => Uso de contenedores.
 - Hito 5 => Combinación de infraestructuras virtuales para desplegar una aplicación completa.
 
