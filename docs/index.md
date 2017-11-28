@@ -19,7 +19,7 @@ Para desarrollar el proyecto, este constará de los siguientes servicios para al
 - Servidor `HTTP` ==> `Nginx`
 - Creación de una `API REST` pública
 
-![alt text](/docs/images/Flask+Mongo+Nginx+Jinja2.png "Diagrama")
+![alt text](images/Flask+Mongo+Nginx+Jinja2.png "Diagrama")
 
 ## Arquitectura
 
