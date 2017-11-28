@@ -2,7 +2,7 @@
 
 ## Descripción del proyecto
 
-Tomando como base el desarrollo del TFG ["Erasmus Management System"](http://www.emsystem.eu/), este proyecto de Cloud Computing busca desarrollar de una manera eficiente un gestor de documentación personal en la nube.
+Tomando como base el desarrollo del TFG **["Erasmus Management System"](http://www.emsystem.eu/)**, este proyecto de Cloud Computing busca desarrollar de una manera eficiente un gestor de documentación personal en la nube.
 
 ## Solución propuesta
 
@@ -19,7 +19,7 @@ Para desarrollar el proyecto, este constará de los siguientes servicios para al
 - Servidor `HTTP` ==> `Nginx`
 - Creación de una `API REST` pública
 
-![alt text](images/Flask+Mongo+Nginx+Jinja2.png "Diagrama")
+![alt text](docs/images/Flask+Mongo+Nginx+Jinja2.png "Diagrama")
 
 ## Arquitectura
 
@@ -35,7 +35,7 @@ Se ha decidido llevar a cabo el provisionamiento a través de Ansible, un motor 
 
 En el siguiente enlace se puede acceder a las instrucciones de instalación del mismo:
 
-- [Provisionamiento con Ansible](provision/ansible)
+- [Provisionamiento con Ansible](provision/ansible/README.md)
 
 ## Automatización de creación de maquinas virtuales
 
@@ -45,7 +45,7 @@ En las máquinas virtuales desplegadas, tanto para realizar las pruebas como par
 
 En el siguiente enlace se puede acceder a las instrucciones de la automatización de creación de máquinas virtuales:
 
-- [Automatización](automation/)
+- [Automatización](automation/README.md)
 
 Despliegue:52.178.73.193
 
