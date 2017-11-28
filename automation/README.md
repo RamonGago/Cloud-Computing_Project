@@ -129,8 +129,8 @@ sh acopio.sh
 
 Una vez ejecutado, en las siguientes imágenes se puede observar cómo se ha creado y provisionado automáticamente la máquina virtual:
 
-![alt text](automation/images/automation_capture1.png "Automation1")
+![alt text](images/automation_capture1.png "Automation1")
 
-![alt text](automation/images/automation_capture2.png "Automation2")
+![alt text](images/automation_capture2.png "Automation2")
 
-![alt text](automation/images/automation_capture3.png "Automation3")
+![alt text](images/automation_capture3.png "Automation3")
