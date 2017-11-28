@@ -47,7 +47,7 @@ En el siguiente enlace se puede acceder a las instrucciones de la automatizació
 
 - [Automatización](automation/)
 
-**IP de despliegue**: 52.178.73.193
+Despliegue:52.178.73.193
 
 ## Planificación
 
