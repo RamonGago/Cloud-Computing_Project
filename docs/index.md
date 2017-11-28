@@ -35,7 +35,7 @@ Se ha decidido llevar a cabo el provisionamiento a través de Ansible, un motor 
 
 En el siguiente enlace se puede acceder a las instrucciones de instalación del mismo:
 
-- [Provisionamiento con Ansible](provision/ansible/README.md)
+- [Provisionamiento con Ansible](/provision/ansible/README.md)
 
 ## Automatización de creación de maquinas virtuales
 
@@ -45,7 +45,7 @@ En las máquinas virtuales desplegadas, tanto para realizar las pruebas como par
 
 En el siguiente enlace se puede acceder a las instrucciones de la automatización de creación de máquinas virtuales:
 
-- [Automatización](automation/README.md)
+- [Automatización](/automation/README.md)
 
 Despliegue:52.178.73.193
 
