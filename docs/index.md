@@ -19,7 +19,7 @@ Para desarrollar el proyecto, este constará de los siguientes servicios para al
 - Servidor `HTTP` ==> `Nginx`
 - Creación de una `API REST` pública
 
-![alt text](docs/images/Flask+Mongo+Nginx+Jinja2.png "Diagrama")
+![alt text](/docs/images/Flask+Mongo+Nginx+Jinja2.png "Diagrama")
 
 ## Arquitectura
 
@@ -51,10 +51,10 @@ Despliegue:52.178.73.193
 
 ## Planificación
 
-- :white_check_mark: Hito 0 => Creación de repositorio en Github y manejo de las herramientas a utilizar.
-- :white_check_mark: Hito 1 => Estructuración y descripción del proyecto a llevar a cabo.
-- :white_check_mark: Hito 2 => Provisionamiento de máquinas virtuales.
-- :white_check_mark: Hito 3 => Automatización de la creación máquinas virtuales.
+- Hito 0 => Creación de repositorio en Github y manejo de las herramientas a utilizar. ==> REALIZADO
+- Hito 1 => Estructuración y descripción del proyecto a llevar a cabo. ==> REALIZADO 
+- Hito 2 => Provisionamiento de máquinas virtuales. ==> REALIZADO
+- Hito 3 => Automatización de la creación máquinas virtuales. ==> REALIZADO
 - Hito 4 => Uso de contenedores.
 - Hito 5 => Combinación de infraestructuras virtuales para desplegar una aplicación completa.
 
