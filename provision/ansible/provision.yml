@@ -1,5 +1,5 @@
 ---
-- hosts: virtualubuntu
+- hosts: UbuntuVM
   user: rgago
   sudo: yes
   roles:
