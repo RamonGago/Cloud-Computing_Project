@@ -1,0 +1,62 @@
+Vagrant.configure("2") do |config|
+  config.vm.define "webServiceData" do |serviceObject|
+    serviceObject.vm.box = 'azure'
+
+  # Usa la clave ssh local para conectarte a la Vagrant Box
+    serviceObject.ssh.private_key_path = '~/.ssh/id_rsa'
+    serviceObject.vm.provider :azure do |azure, override|
+
+    # Selecciona el territorio
+      azure.location="eastus"
+
+    # Selecciona nombre del grupo de recursos y de la máquina virtual
+      azure.resource_group_name="gruporec"
+      azure.vm_name="wsVM"
+
+    # Selecciona la imagen (Sistema Operativo) de la máquina virtual
+      azure.vm_image_urn="credativ:Debian:8:latest"
+
+    # Asigna las variables de entorno con los distintos valores
+      azure.tenant_id = ENV['AZURE_TENANT_ID']
+      azure.client_id = ENV['AZURE_CLIENT_ID']
+      azure.client_secret = ENV['AZURE_CLIENT_SECRET']
+      azure.subscription_id = ENV['AZURE_SUBSCRIPTION_ID']
+    end
+
+  # Provisiona la máquina virtual webService
+    webService.vm.provision "ansible" do |ansible|
+      ansible.playbook = "provision.yml"
+    end
+
+  end
+
+  config.vm.define "databaseServiceData" do |serviceImage|
+    serviceImage.vm.box = 'azure'
+
+  # Usa la clave ssh local para conectarte a la Vagrant Box
+    serviceImage.ssh.private_key_path = '~/.ssh/id_rsa'
+    serviceImage.vm.provider :azure do |azure, override|
+    
+    # Selecciona el territorio
+      azure.location="eastus"
+
+    # Selecciona nombre del grupo de recursos y de la máquina virtual
+      azure.resource_group_name="gruporec"
+      azure.vm_name="dbVM"
+
+    # Selecciona la imagen (Sistema Operativo) de la máquina virtual
+      azure.vm_image_urn="OpenLogic:CentOS:7.3:latest"
+      
+    # Asigna las variables de entorno con los distintos valores
+      azure.tenant_id = ENV['AZURE_TENANT_ID']
+      azure.client_id = ENV['AZURE_CLIENT_ID']
+      azure.client_secret = ENV['AZURE_CLIENT_SECRET']
+      azure.subscription_id = ENV['AZURE_SUBSCRIPTION_ID']
+    end
+
+  # Provisiona la máquina virtual webService
+    webService.vm.provision "ansible" do |ansible|
+      ansible.playbook = "provision.yml"
+    end
+  end
+end
