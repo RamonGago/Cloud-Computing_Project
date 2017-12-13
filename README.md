@@ -57,6 +57,8 @@ Despliegue:52.178.73.193
 La orquestación de la creación de máquinas virtuales se ha realizado a través del cliente de [Azure](https://azure.microsoft.com/es-es/), al igual que en anteriores hitos siguiendo con la línea de despliegue.
 
 Se han creado 2 máquinas virtuales, una destinada al microservicio del servicio web y una segunda para el alojamiento de la base de datos.
+La máquina que aloja el servicio web utiliza el sistema operativo [Debian](https://www.debian.org/intro/about), por su gran estabilidad y rendimiento para alojar este tipo de servicios, además de suponer una ligereza y rapidez superior a la hora de desarrollar servicios en él.
+Por otro lado para la máquina que soporta la base de datos se ha decidido instalar [CentOS](https://www.centos.org/about/) debido a su elevada rapidez en la consulta y extracción de datos. Esta conclusión se ha extraído un estudio realizado sobre diversas consultas a tablas de datos. Puede consultarse aquí ==> []**Estudio**](http://investigacionit.com.ar/es/el-mejor-linux-para-mysql/).
 
 En el siguiente enlace se puede acceder a las instrucciones de la orquestación de la creación máquinas virtuales:
 
