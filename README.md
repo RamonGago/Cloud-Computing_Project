@@ -40,7 +40,7 @@ En el siguiente enlace se puede acceder a las instrucciones de instalación del 
 
 - [Provisionamiento con Ansible](provision/ansible)
 
-## Automatización de creación de maquinas virtuales
+## Automatización de creación de máquinas virtuales
 
 La automatización de la creación de máquinas virtuales se ha realizado a través del cliente de [Azure](https://azure.microsoft.com/es-es/), que ha sido el elegido desde un primer momento para el despliegue de máquinas virtuales en la nube, gracias a su sencillo manejo.
 
@@ -52,14 +52,27 @@ En el siguiente enlace se puede acceder a las instrucciones de la automatizació
 
 Despliegue:52.178.73.193
 
+## Orquestación de máquinas virtuales
+
+La orquestación de la creación de máquinas virtuales se ha realizado a través del cliente de [Azure](https://azure.microsoft.com/es-es/), al igual que en anteriores hitos siguiendo con la línea de despliegue.
+
+Se han creado 2 máquinas virtuales, una destinada al microservicio del servicio web y una segunda para el alojamiento de la base de datos.
+
+En el siguiente enlace se puede acceder a las instrucciones de la orquestación de la creación máquinas virtuales:
+
+- [Orquestacion](orquestacion/)
+
+Despliegue Vagrant:40.71.32.51
+
 ## Planificación
 
 - :white_check_mark: Hito 0 => Creación de repositorio en Github y manejo de las herramientas a utilizar.
 - :white_check_mark: Hito 1 => Estructuración y descripción del proyecto a llevar a cabo.
 - :white_check_mark: Hito 2 => Provisionamiento de máquinas virtuales.
 - :white_check_mark: Hito 3 => Automatización de la creación máquinas virtuales.
-- Hito 4 => Uso de contenedores.
-- Hito 5 => Combinación de infraestructuras virtuales para desplegar una aplicación completa.
+- :white_check_mark: Hito 4 => Orquestación de máquinas virtuales.
+- Hito 5 => Uso de contenedores.
+- Hito 6 => Combinación de infraestructuras virtuales para desplegar una aplicación completa.
 
 
 ## Licencia
