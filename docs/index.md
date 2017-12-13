@@ -47,14 +47,27 @@ En el siguiente enlace se puede acceder a las instrucciones de la automatizació
 
 - [Automatización](/automation/README.md)
 
-Despliegue:52.178.73.193
+Despliegue: 52.178.73.193 (Detenida temporalmente)
+
+## Orquestación de máquinas virtuales
+
+La orquestación de la creación de máquinas virtuales se ha realizado a través del cliente de [Azure](https://azure.microsoft.com/es-es/), al igual que en anteriores hitos siguiendo con la línea de despliegue.
+
+Se han creado 2 máquinas virtuales, una destinada al microservicio del servicio web y una segunda para el alojamiento de la base de datos.
+
+En el siguiente enlace se puede acceder a las instrucciones de la orquestación de la creación máquinas virtuales:
+
+- [Orquestacion](orquestacion/README.md)
+
+Despliegue Vagrant: 40.71.32.51
 
 ## Planificación
 
 - Hito 0 => Creación de repositorio en Github y manejo de las herramientas a utilizar. ==> REALIZADO
-- Hito 1 => Estructuración y descripción del proyecto a llevar a cabo. ==> REALIZADO 
+- Hito 1 => Estructuración y descripción del proyecto a llevar a cabo. ==> REALIZADO
 - Hito 2 => Provisionamiento de máquinas virtuales. ==> REALIZADO
 - Hito 3 => Automatización de la creación máquinas virtuales. ==> REALIZADO
+- Hito 3 => Orquestación de la creación máquinas virtuales. ==> REALIZADO
 - Hito 4 => Uso de contenedores.
 - Hito 5 => Combinación de infraestructuras virtuales para desplegar una aplicación completa.
 
