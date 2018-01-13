@@ -1,9 +1,18 @@
+# Se declaran las variables a utilizar
+az_tenant_id = ENV['AZURE_TENANT_ID']
+az_client_id = ENV['AZURE_CLIENT_ID']
+az_client_secret = ENV['AZURE_CLIENT_SECRET']
+az_subscription_id = ENV['AZURE_SUBSCRIPTION_ID']
+ssh_file = '~/.ssh/id_rsa'
+
+
 Vagrant.configure("2") do |config|
   config.vm.define "webServiceData" do |serviceObject|
     serviceObject.vm.box = 'azure'
 
   # Usa la clave ssh local para conectarte a la Vagrant Box
-    serviceObject.ssh.private_key_path = '~/.ssh/id_rsa'
+    serviceObject.ssh.private_key_path = ssh_file
+
     serviceObject.vm.provider :azure do |azure, override|
 
     # Selecciona el territorio
@@ -17,10 +26,10 @@ Vagrant.configure("2") do |config|
       azure.vm_image_urn="credativ:Debian:8:latest"
 
     # Asigna las variables de entorno con los distintos valores
-      azure.tenant_id = ENV['AZURE_TENANT_ID']
-      azure.client_id = ENV['AZURE_CLIENT_ID']
-      azure.client_secret = ENV['AZURE_CLIENT_SECRET']
-      azure.subscription_id = ENV['AZURE_SUBSCRIPTION_ID']
+      azure.tenant_id = az_tenant_id
+      azure.client_id = az_client_id
+      azure.client_secret = az_client_secret
+      azure.subscription_id = az_subscription_id
     end
 
   # Provisiona la máquina virtual webService
@@ -34,9 +43,9 @@ Vagrant.configure("2") do |config|
     serviceImage.vm.box = 'azure'
 
   # Usa la clave ssh local para conectarte a la Vagrant Box
-    serviceImage.ssh.private_key_path = '~/.ssh/id_rsa'
+    serviceImage.ssh.private_key_path = ssh_file
     serviceImage.vm.provider :azure do |azure, override|
-    
+
     # Selecciona el territorio
       azure.location="eastus"
 
@@ -46,12 +55,12 @@ Vagrant.configure("2") do |config|
 
     # Selecciona la imagen (Sistema Operativo) de la máquina virtual
       azure.vm_image_urn="OpenLogic:CentOS:7.3:latest"
-      
+
     # Asigna las variables de entorno con los distintos valores
-      azure.tenant_id = ENV['AZURE_TENANT_ID']
-      azure.client_id = ENV['AZURE_CLIENT_ID']
-      azure.client_secret = ENV['AZURE_CLIENT_SECRET']
-      azure.subscription_id = ENV['AZURE_SUBSCRIPTION_ID']
+    azure.tenant_id = az_tenant_id
+    azure.client_id = az_client_id
+    azure.client_secret = az_client_secret
+    azure.subscription_id = az_subscription_id
     end
 
   # Provisiona la máquina virtual webService

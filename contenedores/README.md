@@ -29,8 +29,6 @@ Para realizar el despliegue de la imagen creada se seguirán los siguientes paso
 
 - `az appservice plan create --name Microservice_Plan --resource-group Microservice_Group --sku S1 --is-linux` para crear un [plan de servicio](https://docs.microsoft.com/es-es/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview).
 
-- `az appservice plan create --name Microservice_Plan --resource-group Microservice_Group --sku S1 --is-linux` para crear un [plan de servicio](https://docs.microsoft.com/es-es/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview).
-
 - `az webapp create --resource-group Microservice_Group --plan Microservice_Plan --name microservicecloudcomputing --deployment-container-image-name rgcarrera/cloud-computing_project` para desplegar el microservicio en la nube.
 
 - `az webapp config appsettings set -g Microservice_Group -n microservicecloudcomputing --settings PORT=5000` para indicar el puerto que utilizará el microservicio.
