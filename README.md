@@ -82,15 +82,15 @@ Fedora Atomic Host es un sistema operativo de vanguardia que sigue el modelo del
 - Permite la orquestación de contenedores.
 - Provee de un host seguro por defecto.
 
-A continuación se puede observar la comparativa utilizada para la elección del sistema operativo. En ella se comparan varios sistemas operativos minimalistas para Docker ==> [Comparativa](https://www.vagrantup.com/downloads.html).
+A continuación se puede observar la comparativa utilizada para la elección del sistema operativo. En ella se comparan varios sistemas operativos minimalistas para Docker ==> [Comparativa](https://www.inovex.de/blog/docker-a-comparison-of-minimalistic-operating-systems/).
 
 En el siguiente enlace se puede acceder a las instrucciones de la creación del contenedor para el despliegue del microservicio:
 
 - [Contenedores](contenedores/)
 
-Contenedor:https://microservicecloudcomputing.azurewebsites.net
+Contenedor: https://microservicecloudcomputing.azurewebsites.net
 
-Dockerhub:https://hub.docker.com/r/rgcarrera/cloud-computing_project
+Dockerhub: https://hub.docker.com/r/rgcarrera/cloud-computing_project
 
 ![alt text](docs/images/docker.png "Docker")
 
