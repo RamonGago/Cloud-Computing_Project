@@ -67,6 +67,30 @@ Despliegue Vagrant:40.71.32.51
 
 ![alt text](docs/images/vagrant.png "Vagrant")
 
+## Contenedores para despliegue en la nube
+
+Para realizar el despliegue del microservicio propuesto se ha utilizado el servicio proporcionado por [Docker](https://www.docker.com/).
+Esta plataforma permite realizar el despliegue de aplicaciones software a través de la creación de contenedores ligeros y portables que pueden ejecutarse en cualquier máquina con Docker instalado, independientemente del sistema operativo que la máquina tenga por debajo, facilitando de esta manera el despliegue.
+Tras el estudio de diversas imágenes de sistemas operativo para la creación del contenedor se ha optado por [Atomic Host](http://www.projectatomic.io/download/).
+Fedora Atomic Host es un sistema operativo de vanguardia que sigue el modelo del [proyecto Atomic](http://www.projectatomic.io/docs/introduction/). Su diseño está basado en Kubernetes y contenedores y su elección viene dada por las siguientes ventajas:
+- Está diseñado específicamente para ejecutar contenedores.
+- Posee la certificación y confianza de Red Hat Enterprise Linux.
+- Proporciona el despliegue a través de la nube híbrida.
+- Permite la orquestación de contenedores.
+- Provee de un host seguro por defecto.
+
+A continuación se puede observar la comparativa utilizada para la elección del sistema operativo. En ella se comparan varios sistemas operativos minimalistas para Docker ==> [Comparativa](https://www.vagrantup.com/downloads.html).
+
+En el siguiente enlace se puede acceder a las instrucciones de la creación del contenedor para el despliegue del microservicio:
+
+- [Contenedores](contenedores/)
+
+Contenedor:https://microservicecloudcomputing.azurewebsites.net
+
+Dockerhub:https://hub.docker.com/r/rgcarrera/cloud-computing_project
+
+![alt text](docs/images/docker.png "Docker")
+
 ## Planificación
 
 - Hito 0 => Creación de repositorio en Github y manejo de las herramientas a utilizar. ==> REALIZADO
@@ -74,7 +98,7 @@ Despliegue Vagrant:40.71.32.51
 - Hito 2 => Provisionamiento de máquinas virtuales. ==> REALIZADO
 - Hito 3 => Automatización de la creación máquinas virtuales. ==> REALIZADO
 - Hito 3 => Orquestación de la creación máquinas virtuales. ==> REALIZADO
-- Hito 4 => Uso de contenedores.
+- Hito 4 => Uso de contenedores. ==> REALIZADO
 - Hito 5 => Combinación de infraestructuras virtuales para desplegar una aplicación completa.
 
 ## Licencia

@@ -1,20 +1,18 @@
 from flask import Flask, jsonify
 
+microservice = Flask(__name__)
 
-app = Flask(__name__)
-
-@app.route("/")
+@microservice.route("/")
 def getRoot():
     return jsonify(
         status="OK",
     )
 
-@app.route("/status")
+@microservice.route("/status")
 def getStatus():
     return jsonify(
         status="OK",
     )
 
-
 if __name__ == '__main__':
-    app.run(debug=True,host='0.0.0.0')
+    microservice.run(debug=True,host='0.0.0.0')
