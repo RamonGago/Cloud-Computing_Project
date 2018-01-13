@@ -14,6 +14,6 @@ RUN yum -y install python-pip && yum clean all
 # Instala flask y las librerías necesarias
 RUN pip install flask flask-restful flask-jsonpify pymongo
 
-COPY microservice.py /microservice
+COPY contenedores/microservice.py /microservice
 
-ENTRYPOINT python microservice.py
+ENTRYPOINT ["python","microservice.py"]
