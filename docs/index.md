@@ -37,7 +37,7 @@ En el siguiente enlace se puede acceder a las instrucciones de instalación del 
 
 - [Provisionamiento con Ansible](/provision/ansible/README.md)
 
-![alt text](docs/images/ansible.png "Ansible")
+![alt text](images/ansible.png "Ansible")
 
 ## Automatización de creación de maquinas virtuales
 
@@ -65,7 +65,7 @@ En el siguiente enlace se puede acceder a las instrucciones de la orquestación 
 
 Despliegue Vagrant:40.71.32.51
 
-![alt text](docs/images/vagrant.png "Vagrant")
+![alt text](images/vagrant.png "Vagrant")
 
 ## Contenedores para despliegue en la nube
 
@@ -89,7 +89,7 @@ Contenedor:https://microservicecloudcomputing.azurewebsites.net
 
 Dockerhub:https://hub.docker.com/r/rgcarrera/cloud-computing_project
 
-![alt text](docs/images/docker.png "Docker")
+![alt text](images/docker.png "Docker")
 
 ## Planificación
 
