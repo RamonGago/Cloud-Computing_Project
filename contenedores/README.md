@@ -35,7 +35,7 @@ Para realizar el despliegue de la imagen creada se seguirán los siguientes paso
 
 Tras realizar todos los pasos del despliegue el microservicio mostrará su resultado:
 
-![alt text](contenedores/images/statusOK.png "Status")
+![alt text](/contenedores/images/statusOK.png "Status")
 
 ## Más información
 Para más información visitar el siguiente [enlace](https://goto.docker.com/rs/929-FJL-178/images/WP_BusinessValueofDocker_06.26.2017.pdf).
