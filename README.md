@@ -106,4 +106,4 @@ Dockerhub: https://hub.docker.com/r/rgcarrera/cloud-computing_project
 
 
 ## Licencia
-Este proyecto será liberado bajo la licencia [GNU GLP V3](https://github.com/RamonGago/Cloud-Computing_Project/blob/master/LICENSE)
+Este proyecto será liberado bajo la licencia [GNU GPL V3](https://github.com/RamonGago/Cloud-Computing_Project/blob/master/LICENSE)
