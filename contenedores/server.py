@@ -2,14 +2,8 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/status")
 def server_info():
-    return jsonify({
-        server: "API REST"
-    })
-
-@app.status("/status")
-def status_info():
     return jsonify({
         status: "OK"
     })
