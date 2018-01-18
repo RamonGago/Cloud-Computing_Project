@@ -4,7 +4,7 @@ MAINTAINER Ramón Gago Carrera <ramongagocarrera@gmail.com>
 
 WORKDIR /microservice
 
-# Actualiza la imagen con los últimos paquetes 
+# Actualiza la imagen con los últimos paquetes
 RUN yum update -y; yum clean all
 
 # Instala python-pip
