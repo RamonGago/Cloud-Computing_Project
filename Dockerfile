@@ -10,6 +10,6 @@ RUN pip install --no-cache-dir
 # Instala flask y las librerías necesarias
 RUN pip install flask flask-restful flask-jsonpify pymongo
 
-COPY contenedores/server.py /server
+COPY contenedores/server.py /app
 
-ENTRYPOINT ["python", "server.py" ]
+ENTRYPOINT ["python"]
