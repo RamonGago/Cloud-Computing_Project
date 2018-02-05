@@ -13,7 +13,7 @@ Por otro lado se ha utilizado [Azure](https://azure.microsoft.com/es-es/) como p
 En primer lugar se procede a la creación de la imagen a través del "Dockerfile" que ejecutará el microservicio realizado.
 En este caso, el microservicio devolverá `status: "OK"`.
 
-Una vez realizado tanto el dockerfile como el microservicio, ha de crearse una cuenta en [Dockerhub](https://hub.docker.com/) para la creación de la imagen a desplegar en Azure. Tras el registro y la vinculación de la cuenta de Dockerhub con la cuenta de Githu, para la sincronización del repositorio, automaticamente se ejecutará el Dockerfile presente en el repositorio.
+Una vez realizado tanto el dockerfile como el microservicio, ha de crearse una cuenta en [Dockerhub](https://hub.docker.com/) para la creación de la imagen a desplegar en Azure. Tras el registro y la vinculación de la cuenta de Dockerhub con la cuenta de Github, para la sincronización del repositorio, automaticamente se ejecutará el Dockerfile presente en el repositorio.
 
 Desde ese momento la imagen quedará lista para ser desplegada.
 

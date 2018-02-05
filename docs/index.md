@@ -91,6 +91,23 @@ Dockerhub:https://hub.docker.com/r/rgcarrera/cloud-computing_project
 
 ![alt text](images/docker.png "Docker")
 
+## Composición de servicios
+
+Para realizar la composición de servicios se ha utilizado el servicio proporcionado por [Docker-compose](https://docs.docker.com/compose/). Se han utilizado dos imágenes para componer el servicio, en primer lugar se ha optado por la imagen oficial de python2.7 (que despliega el servicio web) y en segundo la oficial de MongoDB (para el despliegue del volumen con la base de datos).
+La elección viene dada por su simplicidad y ligereza a la hora de desplegar un servicio tan sencillo como el creado. Ambas imágenes proporcionan los servicios mínimos y necesarios para la realización de esta parte del servicio.
+
+Este servicio desarrolla una parte del sistema a desarrollar en el caso del proceso erasmus. En este caso se realiza la creación de destinos Erasmus.
+
+Para su despliegue en la nube se ha utilizado una vez más la plataforma de Azure debido a su facilidad y rapidez de despliegue.
+
+En el siguiente enlace se puede acceder a las instrucciones de la creación del contenedor para el despliegue del microservicio:
+
+- [Compose](compose/)
+
+Hito6:http://cloudcomputingrgagoservice.westeurope.cloudapp.azure.com:5000/
+
+![alt text](docs/images/compose.png "Docker-Compose")
+
 ## Planificación
 
 - Hito 0 => Creación de repositorio en Github y manejo de las herramientas a utilizar. ==> REALIZADO
@@ -99,7 +116,7 @@ Dockerhub:https://hub.docker.com/r/rgcarrera/cloud-computing_project
 - Hito 3 => Automatización de la creación máquinas virtuales. ==> REALIZADO
 - Hito 3 => Orquestación de la creación máquinas virtuales. ==> REALIZADO
 - Hito 4 => Uso de contenedores. ==> REALIZADO
-- Hito 5 => Combinación de infraestructuras virtuales para desplegar una aplicación completa.
+- Hito 5 => Combinación de infraestructuras virtuales para desplegar una aplicación completa. ==> REALIZADO
 
 ## Licencia
 Este proyecto será liberado bajo la licencia [GNU GPL V3](https://github.com/RamonGago/Cloud-Computing_Project/blob/master/LICENSE)
