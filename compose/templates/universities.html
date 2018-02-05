@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/static/css/bootstrap.css">
+        <link rel="stylesheet" href="/static/css/bootstrap-theme.css">
+        <link rel="stylesheet" href="/static/css/style.css">
+        <title>Destinos Erasmus UGR</title>
+    </head>
+    <body>
+        <div class="jumbotron">
+          <p class="lead">
+            <a class="btn btn-primary btn-lg" href="/status/" role="button">Status</a>
+          </p>
+          <h1 class="header clearfix">Añadir destino ERASMUS</h1>
+          <div class="form-group">
+            <form action="/new" method="POST">
+              <div class="col-6">
+                <label for="university">Nombre Universidad</label>
+                <input type="text" class="form-control" name="university" id="university" placeholder="Nombre Universidad"></input>
+              </div>
+              <div class="col-6">
+                <label for="country">País</label>
+                <input type="text" class="form-control" name="country" id="country" placeholder="País"></input>
+              </div>
+              <div class="col-6">
+                <label for="numplaces">Número de plazas</label>
+                <input type="text" class="form-control" name="numplaces" id="numplaces" placeholder="Número de plazas"></input>
+                <p></p>
+                <button type="submit" class="btn btn-primary mb-2">Añadir</button>
+              </div>
+            </form>
+            <caption>Lista de Universidades</caption>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Nombre Universidad</th>
+                  <th scope="col">País</th>
+                  <th scope="col">Número de plazas</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for item in items %}
+                  <tr>
+                    <td>{{ item.university }}</td>
+                    <td>{{ item.country }}</td>
+                    <td>{{ item.numplaces }}</td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <script src="/static/js/jquery-2.2.4.js"></script>
+        <script src="/static/js/bootstrap.js"></script>
+    </body>
+    <div class="footer-bottom">
+      	<div class="container">
+      		<div class="row">
+      			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      				<div class="copyright">
+      					© 2018, Cloud Computing UGR
+      				</div>
+      			</div>
+      			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      				<div class="design">
+      					 <a>Ramón Gago Carrera </a>
+      				</div>
+      			</div>
+      		</div>
+      	</div>
+    </div>
+</html>
